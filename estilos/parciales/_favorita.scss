@@ -1,0 +1,21 @@
+@import "./variables";
+
+.favorita .favorita__titulo {
+  font-size: 1.8rem;
+  color: #118c8b;
+  text-align: center;
+  padding: 30px;
+}
+.favorita__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.favorita__imagen {
+  padding: 30px;
+}
+.imgTraslate:hover {
+  transform: translate(15px, 10px);
+}

@@ -1,0 +1,19 @@
+@import "./parciales/variables";
+@import "./parciales/mediaQueries";
+@import "./parciales/reset";
+@import "./parciales/header";
+@import "./parciales/imperdibles";
+@import "./parciales/favorita";
+@import "./parciales/newsletter";
+@import "./parciales/footer";
+
+$coloresTitulo: (
+  "violetaOscuro": $h1,
+  "rojo": $tituloImperdibles,
+  "verde": $h2,
+);
+@each $name, $valor in $coloresTitulo {
+  .titulo--#{$name} {
+    color: $valor;
+  }
+}

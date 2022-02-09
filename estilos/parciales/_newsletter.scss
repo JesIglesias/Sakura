@@ -1,0 +1,22 @@
+@import "./variables";
+
+.newsletter__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.newsletter__titulo {
+  color: chocolate;
+  font-size: 1.2rem;
+}
+.newsletter__formulario {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.gradiente {
+  background: linear-gradient(to left, rgb(82, 240, 135), rgb(247, 196, 247));
+  height: 300px;
+}
