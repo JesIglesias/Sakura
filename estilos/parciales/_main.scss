@@ -1,0 +1,68 @@
+@import "./variables";
+
+// imperdibles
+
+.imperdibles__contenedor {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.imperdibles__titulo {
+  font-size: 1.87rem;
+  font-weight: bold;
+  color: $tituloImperdibles;
+  transform: skew(-5deg);
+}
+.imgScale:hover {
+  transform: scale(1.1);
+}
+
+// favorita
+
+.favorita .favorita__titulo {
+  font-size: 1.8rem;
+  color: #118c8b;
+  text-align: center;
+  padding: 30px;
+}
+.favorita__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.favorita__imagen {
+  padding: 30px;
+}
+.imgTraslate:hover {
+  transform: translate(15px, 10px);
+}
+
+//   newsletter
+
+.newsletter__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.newsletter__titulo {
+  color: chocolate;
+  font-size: 1.2rem;
+}
+.newsletter__formulario {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.gradiente {
+  background: linear-gradient(to left, rgb(82, 240, 135), rgb(247, 196, 247));
+  height: 300px;
+}
+
+.color {
+  background-color: violet;
+}

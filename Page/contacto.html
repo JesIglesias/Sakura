@@ -15,8 +15,8 @@
 </head>
 <body>
     <header class="headerFlex">
-        <h1 class="header__logo">Sakura</h1>
-        <nav class="navbar navbar-expand-lg navbar-light text-center">
+      <h1 class="header__logo fixed-top text-center bg-light bg-opacity-75 ">Sakura</h1>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -68,46 +68,57 @@
       </header>
 
  <main>
-      <section>
-         <h2 class="fuente30">Contacto</h2>
-             <form action="" method="get" enctype="text/plain"></form>
-                 <fieldset>
-                    <legend>Informacion Personal</legend>
-
-                 <div>
-                     <label for="NombreYApellido">Nombre y Apellido
-                         <input type="text" name="NombreYApellido" id="" placeholder="Escribi tu Nombre Y Apellido">
-                     </label>
-                 </div>
-                 <div>
-                     <label for="Talle">Talle:</label>
-
-     <select name="Talle" id="Talle">
-         <option value="" disabled selected>Selecciona Talle</option>
-         <option value="S">S</option>
-         <option value="M">M</option>
-         <option value="L">L</option>
-         <option value="XL">XL</option>
-         <option value="XXL">XXL</option>
-     </select>
-                 </div>
-                 <div>
-                      <label for="MetodoDeEnvio">Metodo de envio:</label>
-                        <input type="radio" name="MetodoDeEnvio" id="Correo" value="correo">Correo
-                        <input type="radio" name="MetodoDeEnvio" id="tienda" value="RetiroEnTienda">Retiro en tienda
+     
+     <section>
+       <div class="container">
+         <div class="row">
+           <div class="col">
+            <form class="row g-3 needs-validation" novalidate>
+             
+              <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                <div class="valid-feedback">
+                  Looks good!
                 </div>
-                <div>
-                    <input type="checkbox" name="Acepto" id="#">¿Queres recibir nuestro newsletter?
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+                <div class="valid-feedback">
+                  Looks good!
                 </div>
-                <div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Comentarios:"></textarea>
-                </div>
-                <div>
-                         <input type="submit" value="Enviar">
-                         <input type="reset" value="Borrar">
-                 </div>
-                 </fieldset>
+              </div>
 
+              <div class="col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+             
+              <div class="col-md-6">
+                <label for="validationCustom04" class="form-label">Categoría de contacto</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value=""></option>
+                  <option>Reclamos</option>
+                  <option>Tienda online</option>
+                  <option>Arrepentimiento de compra online</option>
+                  <option>Sugerencias</option>
+                  <option>Cambios</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <textarea class="form-control" placeholder="Dejá tu comentario" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comentarios</label>
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-outline-dark" type="submit">Enviar</button>
+              </div>
+            </form>
+           </div>
+         </div>
+       </div>
      </section>
      </main>
      <hr class="margen40px">

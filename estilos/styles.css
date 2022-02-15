@@ -1,5 +1,4 @@
 * {
-  background-color: #f0e6e6;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
@@ -148,7 +147,7 @@ section p {
 }
 
 /* footer */
-.footer__contenedor {
+/* .footer__contenedor {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,8 +168,8 @@ section p {
   padding: 5px;
 }
 #footer {
-  color: #cad1d9;
-}
+  color: #cad1d9}; */
+
 /* vestidos */
 .vestidos .vestidos__titulo {
   font-size: 1.8rem;
@@ -408,4 +407,54 @@ section p {
   color: #118c8b;
   text-align: center;
   padding: 30px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #313131;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social__icon li {
+  list-style: none;
+}
+footer .social__icon li a {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social__icon li a:hover {
+  translate: (-10px);
+}
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
