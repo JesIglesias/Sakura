@@ -146,30 +146,6 @@ section p {
   height: 300px;
 }
 
-/* footer */
-/* .footer__contenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-}
-.footer__anchor {
-  margin: 5px;
-}
-.mediosDePago__contenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.mediosDePago {
-  margin: 5px;
-  padding: 5px;
-}
-#footer {
-  color: #cad1d9}; */
-
 /* vestidos */
 .vestidos .vestidos__titulo {
   font-size: 1.8rem;

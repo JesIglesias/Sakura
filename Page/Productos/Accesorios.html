@@ -8,73 +8,77 @@
     <meta name="descriptcion" content="Los cinturones y mochilas de mujer son los complementos perfectos para cualquier prenda de vestir. En Sakura conseguí los mejores en diseño y calidad."> 
     <meta name="keywords" content="ACCESORIOS PARA MUJER, CINTURONES PARA MUJER, MOCHILAS PARA MUJER">
     <title> Accesorios de mujer | Sakura </title>
+    <!-- bootstrap -->
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="../../estilos/styles.css">
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- estilo -->
+    <link rel="stylesheet" href="../../estilos/main.css">
 </head>
+
  <body>
-     
-    <header class="headerFlex">
-        <h1 class="header__logo">Sakura</h1>
-        <nav class="navbar navbar-expand-lg navbar-light text-center>
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active m-3" aria-current="page" href="../../index.html"
-                    >Inicio</a
-                  >
+  <header class="headerFlex">
+    <h1 class="header__logo fixed-top text-center bg-light bg-opacity-75 ">Sakura</h1>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active m-3" aria-current="page" href="../../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle m-3"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../../Page/Productos/Vestidos.html">Vestidos</a></li>
+                  <li><a class="dropdown-item" href="../../Page/Productos/Remeras.html">Remeras</a></li>
+                  <li><a class="dropdown-item" href="../../Page/Productos/Pantalones.html">Pantalones</a></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-3" href="../contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link m-3" href="../Quienes-somos.html">Quiénes somos</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle m-3"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Productos
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="Vestidos.html">Vestidos</a></li>
-                    <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
-                    <li><a class="dropdown-item" href="Pantalones.html">Pantalones</a></li>
-                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link m-3" href="../contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link m-3" href="../Quienes-somos.html">Quiénes somos</a>
-                  </li>
-                </li>
-              </ul>
-            </div>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
      <main>
         
        <div class="container">
-        <h2 class="tituloH2">Accesorios</h2>
+        <h2 class="tituloH2 text-center">Accesorios</h2>
         <div class="row">
           <div class="col-lg-4 ">
             <div class="card" style="width: 18rem">
@@ -90,7 +94,7 @@
                   <option value="3">XL</option>
                   <option value="3">XXL</option>
                 </select>
-                <a href="#" class="btn btn-light btnColor">Comprar</a>
+                <a href="#" class="btn btn-outline-dark btnColor ">Comprar</a>
               </div>
             </div>
           </div>
@@ -133,34 +137,36 @@
             </div> 
         </div>
       </div>
-
-
-    </section>
-      
+    </section>  
     </main>  
-    <hr>
-    
-    <footer>
-    <div class="mediosDePago__contenedor">
-        <a class="mediosDePago" href="../../Page/Medios-de-pago.html">medios de pago</a> 
-    </div>      
-    <div class="footer__contenedor">
-        <a class="footer__anchor" href="#">Preguntas frecuentes</a>
-        <a class="footer__anchor" href="#">cambios</a>
-        <a class="footer__anchor" href="#">promociones</a>
-        <a class="footer__anchor" href="#">local</a>
-    </div>
-    <div>
-        <a href="#"><img src="instagram" alt=""></a>
-        <a href="#"><img src="facebook" alt=""></a>
-        <a href="#"><img src= "chat" alt="" class="chatFixed"></a>   
-    </div>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script> 
 
+    <footer class="footer">
+      <div>
+        <ul class="redes">
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="list">
+          <li><a href="">Preguntas frecuentes</a></li>
+          <li><a href="">Cambios</a></li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Local</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="copyright">2021 - Todos los derechos reservados</p>
+        <a href=""><i class="fa-solid fa-comments chatFixed"></i></a>
+      </div>
+    </footer>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     
 </body> 
 </html>

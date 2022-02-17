@@ -1,0 +1,76 @@
+@import "./variables";
+
+.qs__row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.qs__column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+.tituloGrande__equipo {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(179, 44, 109);
+}
+.titulo__equipo {
+  text-align: center;
+  font-size: 1.1rem;
+  color: blue;
+}
+.qs__card {
+  box-shadow: 0 0 2em rgba(0, 0, 255, 0.802);
+  padding: 3.5em;
+  border-radius: 4em;
+  color: #437a63;
+}
+.qs__card .img-container {
+  width: 8em;
+  height: 8em;
+  border: 5px double pink;
+  padding: 0.1em;
+  border-radius: 50%;
+  margin: 0 auto 5em auto;
+}
+.qs__card img {
+  width: 7em;
+  height: 7em;
+  border-radius: 80px;
+  padding: 0.4em;
+}
+.qs__card h4 {
+  font-weight: 400;
+  margin-top: 1.2em;
+}
+.qs__card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.6em;
+}
+.iconos {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+}
+.qs__card a {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .qs__card {
+    padding: 5.5em;
+  }
+  .qs__column {
+    max-width: 80%;
+    padding-left: 18em;
+  }
+}
