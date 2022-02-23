@@ -1,8 +1,70 @@
+.padding {
+  padding-top: 80px;
+}
+
+.separador {
+  padding-top: 55px;
+}
+
+.titulos__fondo {
+  width: 100%;
+  max-width: 1350px;
+  height: 150px;
+  background-image: url(../../assets/fotoSakuraOriginaljpg2.jpg);
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulos__productos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.padding {
+  padding-top: 80px;
+}
+
+.separador {
+  padding-top: 55px;
+}
+
+.titulos__fondo {
+  width: 100%;
+  max-width: 1350px;
+  height: 150px;
+  background-image: url(../../assets/fotoSakuraOriginaljpg2.jpg);
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulos__productos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 2rem;
 }
 
 .header {
@@ -78,6 +140,37 @@
 .header__anchor {
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+.padding {
+  padding-top: 80px;
+}
+
+.separador {
+  padding-top: 55px;
+}
+
+.titulos__fondo {
+  width: 100%;
+  max-width: 1350px;
+  height: 150px;
+  background-image: url(../../assets/fotoSakuraOriginaljpg2.jpg);
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulos__productos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 2rem;
 }
 
 .imperdibles__contenedor {
@@ -178,6 +271,37 @@
   background-color: violet;
 }
 
+.padding {
+  padding-top: 80px;
+}
+
+.separador {
+  padding-top: 55px;
+}
+
+.titulos__fondo {
+  width: 100%;
+  max-width: 1350px;
+  height: 150px;
+  background-image: url(../../assets/fotoSakuraOriginaljpg2.jpg);
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulos__productos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
 .footer {
   padding: 40px 0;
   background-color: #313131;
@@ -250,6 +374,37 @@
   text-align: center;
   color: black;
   font-size: 1.5rem;
+}
+
+.padding {
+  padding-top: 80px;
+}
+
+.separador {
+  padding-top: 55px;
+}
+
+.titulos__fondo {
+  width: 100%;
+  max-width: 1350px;
+  height: 150px;
+  background-image: url(../../assets/fotoSakuraOriginaljpg2.jpg);
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulos__productos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 2rem;
 }
 
 .qs__row {
@@ -343,6 +498,37 @@
   }
 }
 
+.padding {
+  padding-top: 80px;
+}
+
+.separador {
+  padding-top: 55px;
+}
+
+.titulos__fondo {
+  width: 100%;
+  max-width: 1350px;
+  height: 150px;
+  background-image: url(../../assets/fotoSakuraOriginaljpg2.jpg);
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulos__productos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
 .card-title {
   color: #db6f8f;
   font-weight: bold;
@@ -354,8 +540,8 @@
 }
 
 .card {
-  -webkit-box-shadow: 0 0 1em black;
-          box-shadow: 0 0 1em black;
+  -webkit-box-shadow: 0 0 1em #bb377d;
+          box-shadow: 0 0 1em #bb377d;
 }
 
 .titulo--violetaOscuro {

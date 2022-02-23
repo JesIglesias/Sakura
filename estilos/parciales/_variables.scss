@@ -5,3 +5,26 @@ $tituloImperdibles: #f14d49;
 $h2: #118c8b;
 
 $btnColor: rgb(190, 62, 190);
+
+.padding {
+  padding-top: 80px;
+}
+.separador {
+  padding-top: 55px;
+}
+
+.titulos__fondo {
+  width: 100%;
+  max-width: 1350px;
+  height: 150px;
+  background-image: url(../../assets/fotoSakuraOriginaljpg2.jpg);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulos__productos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 2rem;
+}
