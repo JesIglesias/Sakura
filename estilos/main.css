@@ -1,24 +1,8 @@
-.padding {
-  padding-top: 80px;
-}
-
-.separador {
-  padding-top: 55px;
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.padding {
-  padding-top: 80px;
-}
-
-.separador {
-  padding-top: 55px;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -37,18 +21,10 @@
 
 .header__logo {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
-  padding: 1rem;
+  font-size: 2.2rem;
+  padding: 0.4rem;
   color: #313131;
   font-weight: 700;
-}
-
-.padding {
-  padding-top: 80px;
-}
-
-.separador {
-  padding-top: 55px;
 }
 
 .imperdibles .imperdibles__titulo {
@@ -190,14 +166,6 @@
   height: 300px;
 }
 
-.padding {
-  padding-top: 80px;
-}
-
-.separador {
-  padding-top: 55px;
-}
-
 .footer {
   padding: 40px 0;
   background-color: #313131;
@@ -272,14 +240,6 @@
   text-align: center;
   color: black;
   font-size: 1.5rem;
-}
-
-.padding {
-  padding-top: 80px;
-}
-
-.separador {
-  padding-top: 55px;
 }
 
 .equipo .equipo__titulo {
@@ -400,15 +360,7 @@
 }
 
 .padding {
-  padding-top: 80px;
-}
-
-.separador {
-  padding-top: 55px;
-}
-
-.padding {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 .separador {
@@ -453,14 +405,6 @@
 .card {
   -webkit-box-shadow: 10px 20px 50px #bebebe, -10px -20px 50px #ffffff;
           box-shadow: 10px 20px 50px #bebebe, -10px -20px 50px #ffffff;
-}
-
-.padding {
-  padding-top: 80px;
-}
-
-.separador {
-  padding-top: 55px;
 }
 
 .fuenteMontserrat {

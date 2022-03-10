@@ -1,143 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
- <head> 
-   <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="descriptcion" content="Ropa de mujer al mejor precio y calidad. Renová tus outfits con prendas como remeras,  vestidos, pantalones y accesorios."> 
-    <meta name="keywords" content="ROPA PARA MUJER, ACCESORIOS PARA MUJER, PANTALONES PARA MUJER, REMERAS PARA MUJER, VESTIDOS PARA MUJER, ROPA VINTAGE, INDUMENTARIA DE MUJER, OUTFITS DE MUJER">
-    <title>Sakura | Ropa de Mujer 
-    </title>
+    <meta
+      name="descriptcion"
+      content="Ropa de mujer al mejor precio y calidad. Renová tus outfits con prendas como remeras,  vestidos, pantalones y accesorios."
+    />
+    <meta
+      name="keywords"
+      content="ROPA PARA MUJER, ACCESORIOS PARA MUJER, PANTALONES PARA MUJER, REMERAS PARA MUJER, VESTIDOS PARA MUJER, ROPA VINTAGE, INDUMENTARIA DE MUJER, OUTFITS DE MUJER"
+    />
+    <title>Sakura | Ropa de Mujer</title>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- estilo -->
     <link rel="stylesheet" href="./estilos/main.css" />
   </head>
 
   <body class="padding-top-5">
-    <header class="header">
-      <h1 class="header__logo fixed-top text-center bg-light bg-opacity-75 ">Sakura</h1>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+    <header>
+      <nav class="navbar navbar-light bg-light fixed-top bg-opacity-75">
         <div class="container-fluid">
+          <a class="navbar-brand header__logo" href="#">Sakura</a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active m-3 " aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle m-3"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Productos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item " href="./Page/Productos/Vestidos.html">Vestidos</a></li>
-                  <li><a class="dropdown-item" href="./Page/Productos/Remeras.html">Remeras</a></li>
-                  <li><a class="dropdown-item" href="./Page/Productos/Pantalones.html">Pantalones</a></li>
-                  <li><a class="dropdown-item" href="./Page/Productos/Accesorios.html">Accesorios</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-3" href="./Page/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link m-3" href="./Page/Quienes-somos.html">Quiénes somos</a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                Sakura
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
                 </li>
-              </li>
-            </ul>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="offcanvasNavbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Productos
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="offcanvasNavbarDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./Page/Productos/Vestidos.html"
+                        >Vestidos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./Page/Productos/Remeras.html"
+                        >Remeras</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./Page/Productos/Pantalones.html"
+                        >Pantalones</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./Page/Productos/Accesorios.html"
+                        >Accesorios</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Page/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Page/Quienes-somos.html"
+                    >Quiénes somos</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <span class="my-4"><i class="fa-solid fa-bag-shopping"></i></a></span>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="p-0">
-       <div class="container-fluid p-0">
-        <div class="row">
-          <div class="col">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="./assets/slide1.png"
+                      class="d-block w-100"
+                      alt="modelos con prendas Sakura"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <button class="btn btn-outline-light btn-sm">
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="./assets/slide2.png"
+                      class="d-block w-100"
+                      alt="modelos con prendas Sakura"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <button class="btn btn-outline-light btn-sm">
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/slide3.png"
+                      class="d-block w-100"
+                      alt="modelos con prendas Sakura"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <button class="btn btn-outline-light btn-sm">
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="./assets/slide1.png" class="d-block w-100" alt="modelos con prendas Sakura">
-                  <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-outline-light btn-sm ">Ver más</button>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="./assets/slide2.png" class="d-block w-100" alt="modelos con prendas Sakura">
-                  <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-outline-light btn-sm ">Ver más</button>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./assets/slide3.png" class="d-block w-100" alt="modelos con prendas Sakura">
-                  <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-outline-light btn-sm ">Ver más</button>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
-         </div>
-       </div>
+        </div>
       </section>
 
       <section class="imperdibles mt-4">
-        <div class="imperdibles__contenedor p-2 ">
+        <div class="imperdibles__contenedor p-2">
           <div>
-           <h2 class="imperdibles__titulo ">IMPERDIBLES</h2>
-          </div> 
-          <div class="imgScale p-2  ">
-           <a href="#"><img class="img-fluid rounded-circle img-thumbnail" src="./assets/pantalon2.jpeg" alt="Imagen pantalon"/></a> 
+            <h2 class="imperdibles__titulo">IMPERDIBLES</h2>
           </div>
-          <div class="imgScale p-2   ">
-           <a href="#"><img class="img-fluid rounded-circle img-thumbnail" src="./assets/vestido2.jpeg" alt="Imagen vestido"/></a> 
+          <div class="imgScale p-2">
+            <a href="#"
+              ><img
+                class="img-fluid rounded-circle img-thumbnail"
+                src="./assets/pantalon2.jpeg"
+                alt="Imagen pantalon"
+            /></a>
           </div>
-          <div class="imgScale p-2 ">
-           <a href="#"><img class="img-fluid rounded-circle img-thumbnail" src="./assets/remera3.jpeg" alt="Imagen remera"/></a> 
+          <div class="imgScale p-2">
+            <a href="#"
+              ><img
+                class="img-fluid rounded-circle img-thumbnail"
+                src="./assets/vestido2.jpeg"
+                alt="Imagen vestido"
+            /></a>
+          </div>
+          <div class="imgScale p-2">
+            <a href="#"
+              ><img
+                class="img-fluid rounded-circle img-thumbnail"
+                src="./assets/remera3.jpeg"
+                alt="Imagen remera"
+            /></a>
           </div>
         </div>
       </section>
@@ -159,7 +295,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="p-0">
         <div
           class="container-fluid d-flex flex-column justify-content-center align-items-center my-5 gradiente"
@@ -167,15 +303,24 @@
           <h3 class="newsletter__titulo">Suscribíte a nuestro newsletter</h3>
           <div class="row">
             <div class="col">
-              <form class="row g-3 my-2">   
+              <form class="row g-3 my-2">
                 <div class="col-auto">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-outline-dark newsletter__btn  ">Enviar</button>
+                  <button
+                    type="submit"
+                    class="btn btn-outline-dark newsletter__btn"
+                  >
+                    Enviar
+                  </button>
                 </div>
               </form>
-
             </div>
           </div>
         </div>
@@ -185,9 +330,15 @@
     <footer class="footer">
       <div>
         <ul class="redes">
-          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </li>
         </ul>
       </div>
       <div>
@@ -209,9 +360,5 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
-
-
-
-   

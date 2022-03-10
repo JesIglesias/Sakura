@@ -1,96 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="descriptcion" content="Encontrá los mejores precios en remeras de mujer. Elegí en Sakura el diseño que mejor se adapte a tu estilo."> 
-    <meta name="keywords" content="REMERAS PARA MUJER">
-    <title> Remeras de mujer | Sakura </title>
+    <meta
+      name="descriptcion"
+      content="Encontrá los mejores precios en remeras de mujer. Elegí en Sakura el diseño que mejor se adapte a tu estilo."
+    />
+    <meta name="keywords" content="REMERAS PARA MUJER" />
+    <title>Remeras de mujer | Sakura</title>
     <!-- bootstrap -->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- estilo -->
     <link rel="stylesheet" href="../../estilos/main.css" />
   </head>
 
   <body>
-    <header class="headerFlex">
-      <h1 class="header__logo fixed-top text-center bg-light bg-opacity-75 ">Sakura</h1>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <header>
+      <nav class="navbar navbar-light bg-light fixed-top bg-opacity-75">
+        <div class="container-fluid">
+          <a class="navbar-brand header__logo" href="../../index.html"
+            >Sakura</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                Sakura
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active m-3" aria-current="page" href="../../index.html"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../../index.html"
                     >Inicio</a
                   >
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle m-3"
+                    class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="offcanvasNavbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Productos
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../../Page/Productos/Vestidos.html">Vestidos</a></li>
-                    <li><a class="dropdown-item" href="../../Page/Productos/Remeras.html">Remeras</a></li>
-                    <li><a class="dropdown-item" href="../../Page/Productos/Pantalones.html">Pantalones</a></li>
-                    <li><a class="dropdown-item" href="../../Page/Productos/Accesorios.html">Accesorios</a></li>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="offcanvasNavbarDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../Page/Productos/Vestidos.html"
+                        >Vestidos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Remeras</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../Page/Productos/Pantalones.html"
+                        >Pantalones</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../../Page/Productos/Accesorios.html"
+                        >Accesorios</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link m-3" href="../contacto.html">Contacto</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../contacto.html"
+                    >Contacto</a
+                  >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link m-3" href="../Quienes-somos.html">Quiénes somos</a>
-                  </li>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../Quienes-somos.html"
+                    >Quiénes somos</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <div class="titulos__fondo">
         <h2 class="titulos__productos padding">Remeras</h2>
-       </div>
-       <div class="container my-5">
+      </div>
+      <div class="container my-5">
         <div class="row">
           <div class="col-lg-4 my-2 d-flex justify-content-center">
             <div class="card" style="width: 18rem">
-              <img src="../../assets/remera1.jpeg" class="card-img-top" alt="Remera Magnolia" />
+              <img
+                src="../../assets/remera1.jpeg"
+                class="card-img-top"
+                alt="Remera Magnolia"
+              />
               <div class="card-body">
                 <h5 class="card-title text-center">Remera Magnolia</h5>
                 <p class="card-text text-center">$2350</p>
-                <select class="form-select my-4 border" >
+                <select class="form-select my-4 border">
                   <option selected>Seleccioná tu talle</option>
                   <option value="1">S</option>
                   <option value="2">M</option>
@@ -98,17 +167,25 @@
                   <option value="3">XL</option>
                   <option value="3">XXL</option>
                 </select>
-                <a href="#" class="btn btn-outline-dark btnColor d-flex justify-content-center">Comprar</a>
+                <a
+                  href="#"
+                  class="btn btn-outline-dark btnColor d-flex justify-content-center"
+                  >Comprar</a
+                >
               </div>
             </div>
           </div>
           <div class="col-lg-4 my-2 d-flex justify-content-center">
             <div class="card" style="width: 18rem">
-              <img src="../../assets/remera5.jpeg" class="card-img-top" alt="Remera Jazmín" />
+              <img
+                src="../../assets/remera5.jpeg"
+                class="card-img-top"
+                alt="Remera Jazmín"
+              />
               <div class="card-body">
                 <h5 class="card-title text-center">Remera Jazmín</h5>
                 <p class="card-text text-center">$2600</p>
-                <select class="form-select my-4 border" >
+                <select class="form-select my-4 border">
                   <option selected>Seleccioná tu talle</option>
                   <option value="1">S</option>
                   <option value="2">M</option>
@@ -116,17 +193,25 @@
                   <option value="3">XL</option>
                   <option value="3">XXL</option>
                 </select>
-                <a href="#" class="btn btn-outline-dark btnColor d-flex justify-content-center">Comprar</a>
+                <a
+                  href="#"
+                  class="btn btn-outline-dark btnColor d-flex justify-content-center"
+                  >Comprar</a
+                >
               </div>
             </div>
           </div>
           <div class="col-lg-4 my-2 d-flex justify-content-center">
             <div class="card" style="width: 18rem">
-              <img src="../../assets/remera3.jpeg" class="card-img-top" alt="Remera Margarita" />
+              <img
+                src="../../assets/remera3.jpeg"
+                class="card-img-top"
+                alt="Remera Margarita"
+              />
               <div class="card-body">
                 <h5 class="card-title text-center">Remera MArgarita</h5>
                 <p class="card-text text-center">$2500</p>
-                <select class="form-select my-4 border" >
+                <select class="form-select my-4 border">
                   <option selected>Seleccioná tu talle</option>
                   <option value="1">S</option>
                   <option value="2">M</option>
@@ -134,7 +219,11 @@
                   <option value="3">XL</option>
                   <option value="3">XXL</option>
                 </select>
-                <a href="#" class="btn btn-outline-dark btnColor d-flex justify-content-center">Comprar</a>
+                <a
+                  href="#"
+                  class="btn btn-outline-dark btnColor d-flex justify-content-center"
+                  >Comprar</a
+                >
               </div>
             </div>
           </div>
@@ -145,9 +234,15 @@
     <footer class="footer">
       <div>
         <ul class="redes">
-          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </li>
         </ul>
       </div>
       <div>
@@ -163,11 +258,11 @@
         <a href=""><i class="fa-solid fa-comments chatFixed"></i></a>
       </div>
     </footer>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script>   
+    ></script>
   </body>
 </html>

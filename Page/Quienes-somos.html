@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,65 +19,123 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- estilo -->
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- estilo -->
     <link rel="stylesheet" href="../estilos/main.css" />
   </head>
 
   <body>
-    <header class="headerFlex">
-      <h1 class="header__logo fixed-top text-center bg-light bg-opacity-75 ">Sakura</h1>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <header>
+      <nav class="navbar navbar-light bg-light fixed-top bg-opacity-75">
+        <div class="container-fluid">
+          <a class="navbar-brand header__logo" href="../index.html">Sakura</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                Sakura
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active m-3" aria-current="page" href="../index.html"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
                     >Inicio</a
                   >
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle m-3"
+                    class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="offcanvasNavbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Productos
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../Page/Productos/Vestidos.html">Vestidos</a></li>
-                    <li><a class="dropdown-item" href="../Page/Productos/Remeras.html">Remeras</a></li>
-                    <li><a class="dropdown-item" href="../Page/Productos/Pantalones.html">Pantalones</a></li>
-                    <li><a class="dropdown-item" href="../Page/Productos/Accesorios.html">Accesorios</a></li>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="offcanvasNavbarDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../Page/Productos/Vestidos.html"
+                        >Vestidos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../Page/Productos/Remeras.html"
+                        >Remeras</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../Page/Productos/Pantalones.html"
+                        >Pantalones</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../Page/Productos/Accesorios.html"
+                        >Accesorios</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link m-3" href="./contacto.html">Contacto</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./contacto.html"
+                    >Contacto</a
+                  >
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link m-3" href="#">Quiénes somos</a>
-                  </li>
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Quiénes somos</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <div class="titulos__fondo">
@@ -83,75 +144,100 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <p class="p-4 fuenteMontserrat">Sakura es una marca de diseño independiente que nació en el año 2010. Desde sus inicios marcó una tendencia romántica vintage, pero sin dejar de lado las tendencias actuales. <br><br> Busca generar prendas de buena calidad no solo en sus materiales y confección, sino también en su diseño, mediante la colocación  de detalles que hacen a cada prenda única. <br><br> 
-            Nuestras prendas aseguran un justo equilibro entre calidad y accesibilidad, permitiendo que cada mujer pueda recrear su propio estilo y potenciar lo mejor de si misma.
+            <p class="p-4 fuenteMontserrat">
+              Sakura es una marca de diseño independiente que nació en el año
+              2010. Desde sus inicios marcó una tendencia romántica vintage,
+              pero sin dejar de lado las tendencias actuales. <br /><br />
+              Busca generar prendas de buena calidad no solo en sus materiales y
+              confección, sino también en su diseño, mediante la colocación de
+              detalles que hacen a cada prenda única. <br /><br />
+              Nuestras prendas aseguran un justo equilibro entre calidad y
+              accesibilidad, permitiendo que cada mujer pueda recrear su propio
+              estilo y potenciar lo mejor de si misma.
             </p>
           </div>
         </div>
       </div>
 
-        <section class="equipo">
-          <h2 class="equipo__titulo">Nosotras</h2>
-          <div class="equipo__contenedor">
-
-            <div class="equipo__card  my-4">
-              <img class="equipo__img" src="../assets/perfil1b.png" alt="foto de MAriana López, diseñadora">
-              <h4 class="equipo__tituloChico">Mariana López</h4>
-              <p class="equipo__tituloChico">Diseñadora</p>
-              <div class="d-flex flex-row justify-content-center">
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                </div>
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </div>
+      <section class="equipo">
+        <h2 class="equipo__titulo">Nosotras</h2>
+        <div class="equipo__contenedor">
+          <div class="equipo__card my-4">
+            <img
+              class="equipo__img"
+              src="../assets/perfil1b.png"
+              alt="foto de MAriana López, diseñadora"
+            />
+            <h4 class="equipo__tituloChico">Mariana López</h4>
+            <p class="equipo__tituloChico">Diseñadora</p>
+            <div class="d-flex flex-row justify-content-center">
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
               </div>
-            </div>
-            <div class="equipo__card  my-4">
-              <img class="equipo__img" src="../assets/perfil2a.png" alt="foto de Laura Pascuale, diseñadora">
-              <h4>Laura Pascuale</h4>
-              <p class="equipo__tituloChico">Diseñadora</p>
-              <div class="d-flex flex-row justify-content-center">
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                </div>
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </div>
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
               </div>
-            </div>
-            <div class="equipo__card  my-4">
-              <img class="equipo__img" src="../assets/perfil3b.png" alt="foto de Anabella Giuliano, diseñadora">
-              <h4>Anabella Giuliano</h4>
-              <p class="equipo__tituloChico">Diseñadora</p>
-              <div class="d-flex flex-row justify-content-center">
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                </div>
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="p-4 iconos">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </div>
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
               </div>
             </div>
           </div>
-        </section>    
+          <div class="equipo__card my-4">
+            <img
+              class="equipo__img"
+              src="../assets/perfil2a.png"
+              alt="foto de Laura Pascuale, diseñadora"
+            />
+            <h4>Laura Pascuale</h4>
+            <p class="equipo__tituloChico">Diseñadora</p>
+            <div class="d-flex flex-row justify-content-center">
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="equipo__card my-4">
+            <img
+              class="equipo__img"
+              src="../assets/perfil3b.png"
+              alt="foto de Anabella Giuliano, diseñadora"
+            />
+            <h4>Anabella Giuliano</h4>
+            <p class="equipo__tituloChico">Diseñadora</p>
+            <div class="d-flex flex-row justify-content-center">
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="p-4 iconos">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div>
         <ul class="redes">
-          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </li>
         </ul>
       </div>
       <div>
@@ -163,7 +249,7 @@
         </ul>
       </div>
       <div>
-        <p class="copyright">2022 - Todos los derechos reservados</p>
+        <p class="copyright">202 - Todos los derechos reservados</p>
         <a href=""><i class="fa-solid fa-comments chatFixed"></i></a>
       </div>
     </footer>
