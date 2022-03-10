@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https: //fonts.googleapis.com/css2? family = Montserrat: ital @ 1 & display = swap "
-      rel=" stylesheet "
-    />
+ <head> 
+   <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,8 +14,7 @@
     <title>Sakura | Ropa de Mujer 
     </title>
     <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
@@ -66,7 +60,7 @@
                   Productos
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./Page/Productos/Vestidos.html">Vestidos</a></li>
+                  <li><a class="dropdown-item " href="./Page/Productos/Vestidos.html">Vestidos</a></li>
                   <li><a class="dropdown-item" href="./Page/Productos/Remeras.html">Remeras</a></li>
                   <li><a class="dropdown-item" href="./Page/Productos/Pantalones.html">Pantalones</a></li>
                   <li><a class="dropdown-item" href="./Page/Productos/Accesorios.html">Accesorios</a></li>
@@ -87,103 +81,98 @@
     </header>
 
     <main>
-      <section>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active mb-5">
-                    <img src="./assets/slide1.png" class="d-block w-100" alt="...">
-
-                  </div>
-                  <div class="carousel-item mb-5">
-                    <img src="./assets/slide2.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item mb-5">
-                    <img src="./assets/slide3.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+      <section class="p-0">
+       <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="./assets/slide1.png" class="d-block w-100" alt="modelos con prendas Sakura">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-outline-light btn-sm ">Ver más</button>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./assets/slide2.png" class="d-block w-100" alt="modelos con prendas Sakura">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-outline-light btn-sm ">Ver más</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/slide3.png" class="d-block w-100" alt="modelos con prendas Sakura">
+                  <div class="carousel-caption d-none d-md-block">
+                    <button class="btn btn-outline-light btn-sm ">Ver más</button>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+          </div>
+         </div>
+       </div>
+      </section>
+
+      <section class="imperdibles mt-4">
+        <div class="imperdibles__contenedor p-2 ">
+          <div>
+           <h2 class="imperdibles__titulo ">IMPERDIBLES</h2>
+          </div> 
+          <div class="imgScale p-2  ">
+           <a href="#"><img class="img-fluid rounded-circle img-thumbnail" src="./assets/pantalon2.jpeg" alt="Imagen pantalon"/></a> 
+          </div>
+          <div class="imgScale p-2   ">
+           <a href="#"><img class="img-fluid rounded-circle img-thumbnail" src="./assets/vestido2.jpeg" alt="Imagen vestido"/></a> 
+          </div>
+          <div class="imgScale p-2 ">
+           <a href="#"><img class="img-fluid rounded-circle img-thumbnail" src="./assets/remera3.jpeg" alt="Imagen remera"/></a> 
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-lg-3 d-flex align-items-center ">
-              <h2 class="imperdibles__titulo">IMPERDIBLES</h2>
-            </div>
-            <div class="col-md-4 my-2 my-lg-0 text-center col-lg-3 px-2  imgScale">
-              <img class="img-fluid" src="./assets/pantalon2.jpeg" alt="Imagen pantalon "/>
-            </div>
-            <div class="col-md-4 my-2 my-lg-0 text-center col-lg-3 px-2 imgScale">
-              <img class="img-fluid" src="./assets/vestido2.jpeg" alt="Imagen vestido"/>
-            </div>
-            <div class="col-md-4 my-2 my-lg-0 text-center col-lg-3 px-2 imgScale">
-              <img class="img-fluid" src="./assets/remera3.jpeg" alt="Imagen remera"/>
-            </div>
+      <section class="favorita mt-4">
+        <h2 class="favorita__titulo">Encontrá tu prenda favorita</h2>
+        <div class="favorita__contenedor">
+          <div class="favorita__card cardTraslate my-2">
+            <p class="favorita__tituloChico">Remeras</p>
+            <button class="favorita__button">Ver más</button>
+          </div>
+          <div class="favorita__card cardTraslate my-2">
+            <p class="favorita__tituloChico">Vestidos</p>
+            <button class="favorita__button">Ver más</button>
+          </div>
+          <div class="favorita__card cardTraslate my-2">
+            <p class="favorita__tituloChico">Pantalones</p>
+            <button class="favorita__button">Ver más</button>
           </div>
         </div>
       </section>
-
-      <section>
-        <div class="container">
-          <h2 class="text-center my-4 favorita__titulo">Encontrá tu prenda favorita</h2>
-          <div class="row">
-            <div class="col-md-4 col-lg-4 my-2 text-center">
-              <img
-                class="imgTraslate"
-                src="./assets/fondoRemeras.jpg"
-                alt="remeras"
-              />
-            </div>
-            <div class="col-md-4 col-lg-4 my-2 text-center ">
-              <img
-                class="imgTraslate"
-                src="./assets/fondoAccesorios.jpg"
-                alt="accesorios"
-              />
-            </div>
-            <div class="col-md-4 col-lg-4 my-2 text-center ">
-              <img
-                class="imgTraslate"
-                src="./assets/fondoPantalones.jpg"
-                alt="pantalones"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
+      
+      <section class="p-0">
         <div
           class="container-fluid d-flex flex-column justify-content-center align-items-center my-5 gradiente"
         >
-          <h3>Suscribíte a nuestro newsletter</h3>
+          <h3 class="newsletter__titulo">Suscribíte a nuestro newsletter</h3>
           <div class="row">
             <div class="col">
-              <form class="row g-3">   
+              <form class="row g-3 my-2">   
                 <div class="col-auto">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-outline-dark mb-3">Enviar</button>
+                  <button type="submit" class="btn btn-outline-dark newsletter__btn  ">Enviar</button>
                 </div>
               </form>
 
@@ -210,7 +199,7 @@
         </ul>
       </div>
       <div>
-        <p class="copyright">2021 - Todos los derechos reservados</p>
+        <p class="copyright">2022 - Todos los derechos reservados</p>
         <a href=""><i class="fa-solid fa-comments chatFixed"></i></a>
       </div>
     </footer>
@@ -221,7 +210,6 @@
       crossorigin="anonymous"
     ></script>
 </body>
-
 </html>
 
 

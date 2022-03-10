@@ -1,49 +1,21 @@
 @import "./variables";
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.navbar .navbar-nav .nav-link:hover {
+  color: #7f00ff;
+  font-weight: bold;
+}
+.navbar {
+  font-family: "Montserrat", sans-serif;
+}
 
-  @include tablet {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  &__logo {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
-    padding: 1rem;
-    color: $h1;
-  }
-  &__list--menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  &__item:hover {
-    position: relative;
-    margin-left: 5rem;
-  }
-
-  &__item ul {
-    position: absolute;
-    display: none;
-    list-style: none;
-    padding: 0.5rem;
-  }
-
-  &__item:hover ul {
-    display: block;
-    color: black; /*no funciona el hover*/
-  }
-
-  &__anchor {
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
+.navbar .navbar-nav .nav-link {
+  color: #313131;
+  font-weight: 600;
+}
+.header__logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  padding: 1rem;
+  color: $h1;
+  font-weight: 700;
 }

@@ -65,7 +65,7 @@ section p {
 
 .header__item:hover ul {
   display: block;
-  color: black; /*no funciona el hover*/
+  color: black;
 }
 
 .header__anchor {

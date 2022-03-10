@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +30,7 @@
     <!-- estilo -->
     <link rel="stylesheet" href="../estilos/main.css" />
   </head>
+
   <body>
     <header class="headerFlex">
       <h1 class="header__logo fixed-top text-center bg-light bg-opacity-75">
@@ -111,7 +119,8 @@
       <div class="titulos__fondo">
         <h2 class="titulos__productos padding">contacto</h2>
       </div>
-      <section>
+
+      <section class="fuenteMontserrat my-3">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -179,11 +188,31 @@
                 </div>
 
                 <div class="col-12">
-                  <button class="btn btn-outline-dark" type="submit">
+                  <button class="btn btn-outline-dark my-4" type="submit">
                     Enviar
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h3 class="text-center localTitulo fw-bold">Nuestro local</h3>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex justify-content-center mb-2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.62648220255!2d-58.41294568519584!3d-34.588316564189505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83d2aa1521%3A0xc7a941fe0d021ba0!2sAlto%20Palermo%20Shopping!5e0!3m2!1ses!2sar!4v1646854385011!5m2!1ses!2sar"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -213,7 +242,7 @@
         </ul>
       </div>
       <div>
-        <p class="copyright">2021 - Todos los derechos reservados</p>
+        <p class="copyright">2022 - Todos los derechos reservados</p>
         <a href=""><i class="fa-solid fa-comments chatFixed"></i></a>
       </div>
     </footer>

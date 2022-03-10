@@ -1,1 +1,54 @@
 @import "./variables";
+
+.favorita .favorita__titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #008a8b;
+  text-align: center;
+  padding: 30px;
+}
+.favorita__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.favorita__card {
+  width: 290px;
+  height: 400px;
+  background: #afe7e2;
+  border-radius: 40px 0 40px 0;
+  border: 6px solid #f2acc9;
+}
+.cardTraslate:hover {
+  transform: translate(15px, 10px);
+}
+.favorita .favorita__tituloChico {
+  font-weight: 500;
+  color: rgb(190, 62, 190);
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+  font-family: "Berkshire Swash", cursive;
+}
+.favorita__tituloChico {
+  font-size: 2.5rem;
+}
+.favorita__button {
+  color: white;
+  padding: 0.7em 1.7em;
+  font-size: 0.8rem;
+  border-radius: 1em;
+  background: #f2acc9;
+  border: 1.8px solid #602bc1;
+  transition: all 0.2s;
+  display: block;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.favorita__button:hover {
+  border: 1px solid white;
+}

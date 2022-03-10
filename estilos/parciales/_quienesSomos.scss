@@ -1,75 +1,92 @@
 @import "./variables";
 
-.qs__row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2em 1em;
+.equipo .equipo__titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #602bc1;
   text-align: center;
+  padding: 30px;
+}
+.equipo__contenedor {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.qs__column {
-  width: 100%;
-  padding: 0.5em 0;
-}
-.tituloGrande__equipo {
-  font-size: 1.5rem;
-  color: rgb(179, 44, 109);
-}
-.titulo__equipo {
-  text-align: center;
-  font-size: 1.1rem;
-  color: rgb(0, 89, 255);
-}
-.qs__card {
-  box-shadow: 0 0 2em rgba(0, 0, 255, 0.802);
-  padding: 3.5em;
+.equipo__card {
+  width: 290px;
+  height: 400px;
+  box-shadow: 5px 5px 15px #e74c3c;
   border-radius: 4em;
-  color: #437a63;
 }
-.qs__card .img-container {
-  width: 8em;
-  height: 8em;
-  border: 5px double pink;
-  padding: 0.1em;
+.equipo__card .equipo__img {
+  width: auto;
+  height: auto;
   border-radius: 50%;
-  margin: 0 auto 5em auto;
+  margin: auto;
+  padding: 20px;
+  display: flex;
 }
-.qs__card img {
-  width: 7em;
-  height: 7em;
-  border-radius: 80px;
-  padding: 0.4em;
+.equipo h4 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  color: #602bc1;
+  font-weight: bold;
 }
-.qs__card h4 {
-  font-weight: 400;
-  margin-top: 1.2em;
-}
-.qs__card p {
-  font-weight: 300;
+.equipo p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   margin: 0.6em;
+  color: #ff9b9b;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 .iconos {
-  width: 50%;
-  min-width: 180px;
-  margin: auto;
+  min-width: 100px;
+  text-align: center;
+  justify-content: center;
 }
-.qs__card a {
-  text-decoration: none;
-  color: lightcoral;
-  font-size: 1.3rem;
+.equipo a {
+  color: #ff9b9b;
+  font-size: 1.5rem;
+}
+.equipo .card {
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.equipo .equipo__card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #ff9472;
+  transition: all 0.3s;
 }
 
-@media screen and (min-width: 992px) {
-  section {
-    padding: 1em;
-  }
-  .qs__card {
-    padding: 5.5em;
-  }
-  .qs__column {
-    max-width: 80%;
-    padding-left: 18em;
-  }
+.equipo .equipo__card:hover {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 15px #b06ab3;
+}
+.equipo .equipo__card:hover {
+  background: #ff9b9b;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 15px #602bc1;
+}
+.equipo .equipo__card:hover h4 {
+  color: #fff;
+}
+.equipo .equipo__card:hover p {
+  color: #fff;
+}
+.equipo .equipo__card:hover i {
+  color: #fff;
+}
+.padding {
+  padding-top: 80px;
+}
+.separador {
+  padding-top: 55px;
 }

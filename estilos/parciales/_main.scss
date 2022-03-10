@@ -2,17 +2,20 @@
 
 // imperdibles
 
+.imperdibles .imperdibles__titulo {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: $tituloImperdibles;
+  font-style: italic;
+  text-align: center;
+  padding: 6px;
+}
 .imperdibles__contenedor {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-}
-.imperdibles__titulo {
-  font-size: 1.87rem;
-  font-weight: bold;
-  color: $tituloImperdibles;
-  transform: skew(-5deg);
+  flex-wrap: wrap;
 }
 .imgScale:hover {
   transform: scale(1.1);
@@ -21,8 +24,10 @@
 // favorita
 
 .favorita .favorita__titulo {
-  font-size: 1.8rem;
-  color: #118c8b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #008a8b;
   text-align: center;
   padding: 30px;
 }
@@ -33,11 +38,42 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.favorita__imagen {
-  padding: 30px;
+.favorita__card {
+  width: 290px;
+  height: 400px;
+  background: #afe7e2;
+  border-radius: 40px 0 40px 0;
+  border: 6px solid #f2acc9;
 }
-.imgTraslate:hover {
+.cardTraslate:hover {
   transform: translate(15px, 10px);
+}
+.favorita .favorita__tituloChico {
+  font-weight: 500;
+  color: rgb(190, 62, 190);
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+  font-family: "Berkshire Swash", cursive;
+}
+.favorita__tituloChico {
+  font-size: 2.5rem;
+}
+.favorita__button {
+  color: white;
+  padding: 0.7em 1.7em;
+  font-size: 0.8rem;
+  border-radius: 1em;
+  background: #f2acc9;
+  border: 1.8px solid #602bc1;
+  transition: all 0.2s;
+  display: block;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.favorita__button:hover {
+  border: 1px solid white;
 }
 
 //   newsletter
@@ -51,18 +87,16 @@
 }
 
 .newsletter__titulo {
-  color: chocolate;
-  font-size: 1.2rem;
+  color: rgb(136, 73, 28);
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
-.newsletter__formulario {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.gradiente {
-  background: linear-gradient(to left, rgb(82, 240, 135), rgb(247, 196, 247));
-  height: 300px;
+.newsletter__btn {
+  font-family: "Montserrat", sans-serif;
 }
 
-.color {
-  background-color: violet;
+.gradiente {
+  background: linear-gradient(to left, #eecda3, #fdb99b, #ef629f);
+  height: 300px;
 }
